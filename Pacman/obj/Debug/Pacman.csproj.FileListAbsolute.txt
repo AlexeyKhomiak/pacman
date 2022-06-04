@@ -1,0 +1,16 @@
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\bin\Debug\Pacman.exe.config
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\bin\Debug\Pacman.exe
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\bin\Debug\Pacman.pdb
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\bin\Debug\WpfAnimatedGif.dll
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\bin\Debug\WpfAnimatedGif.xml
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\obj\Debug\View\MainWindow.g.cs
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\obj\Debug\App.g.cs
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\obj\Debug\GeneratedInternalTypeHelper.g.cs
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\obj\Debug\Pacman_MarkupCompile.cache
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\obj\Debug\Pacman_MarkupCompile.lref
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\obj\Debug\View\MainWindow.baml
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\obj\Debug\Pacman.g.resources
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\obj\Debug\Pacman.Properties.Resources.resources
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\obj\Debug\Pacman.csproj.GenerateResource.Cache
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\obj\Debug\Pacman.exe
+G:\ALL\PROGRAMING\Luxoft\Pacman\Pacman\obj\Debug\Pacman.pdb

@@ -1,0 +1,144 @@
+﻿<Window x:Class="Pacman.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pacman"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        Title="MainWindow"  Width="{Binding Path=Game.WindowWidth, 
+                                        Mode=TwoWay}" 
+                            Height="{Binding Path=Game.WindowHeight,
+                                        Mode=TwoWay}" >
+    <Window.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </Window.DataContext>
+
+    <Window.InputBindings>
+        <KeyBinding Key="Left" Command="{Binding Left}"></KeyBinding>
+        <KeyBinding Key="Right" Command="{Binding Right}"></KeyBinding>
+        <KeyBinding Key="Up" Command="{Binding Up}"></KeyBinding>
+        <KeyBinding Key="Down" Command="{Binding Down}"></KeyBinding>
+
+    </Window.InputBindings>
+    <Canvas x:Name="Canv" Margin="0,0,0,0">
+        <Image Source="{Binding Game.Field.Sprite}"
+               Stretch="UniformToFill"
+               >
+        </Image>
+        
+        <Image Stretch="UniformToFill"  
+               gif:ImageBehavior.AnimatedSource="{Binding Game.Finish.Sprite}"  
+               Width="{Binding Game.Finish.Width}" 
+               Canvas.Left="{Binding Game.Finish.X}" 
+               Canvas.Top="{Binding Game.Finish.Y}" 
+               RenderTransformOrigin="0.5,0.5">
+        </Image>
+
+        <Image Stretch="UniformToFill"  
+               gif:ImageBehavior.AnimatedSource="{Binding Game.Block.Sprite}"  
+               Width="{Binding Game.Block.Width}" 
+               Canvas.Left="{Binding Game.Block.X}" 
+               Canvas.Top="{Binding Game.Block.Y}" 
+               RenderTransformOrigin="0.5,0.5">
+        </Image>
+        
+        <Image Stretch="UniformToFill"  
+               gif:ImageBehavior.AnimatedSource="{Binding Game.Block2.Sprite}"  
+               Width="{Binding Game.Block2.Width}" 
+               Canvas.Left="{Binding Game.Block2.X}" 
+               Canvas.Top="{Binding Game.Block2.Y}" 
+               RenderTransformOrigin="0.5,0.5">
+        </Image>
+        
+        <Image Stretch="UniformToFill"  
+               gif:ImageBehavior.AnimatedSource="{Binding Game.Block3.Sprite}"  
+               Width="{Binding Game.Block3.Width}" 
+               Canvas.Left="{Binding Game.Block3.X}" 
+               Canvas.Top="{Binding Game.Block3.Y}" 
+               RenderTransformOrigin="0.5,0.5">
+        </Image>
+        
+        <Image Stretch="UniformToFill"  
+               gif:ImageBehavior.AnimatedSource="{Binding Game.Coin.Sprite}"  
+               Width="{Binding Game.Coin.Width}" 
+               Canvas.Left="{Binding Game.Coin.X}" 
+               Canvas.Top="{Binding Game.Coin.Y}" 
+               RenderTransformOrigin="0.5,0.5">
+        </Image>
+        
+        <Image Stretch="UniformToFill"  
+               gif:ImageBehavior.AnimatedSource="{Binding Game.Coin2.Sprite}"  
+               Width="{Binding Game.Coin2.Width}" 
+               Canvas.Left="{Binding Game.Coin2.X}" 
+               Canvas.Top="{Binding Game.Coin2.Y}" 
+               RenderTransformOrigin="0.5,0.5">
+        </Image>
+        
+        <Image Stretch="UniformToFill"  
+               gif:ImageBehavior.AnimatedSource="{Binding Game.Coin3.Sprite}"  
+               Width="{Binding Game.Coin3.Width}" 
+               Canvas.Left="{Binding Game.Coin3.X}" 
+               Canvas.Top="{Binding Game.Coin3.Y}" 
+               RenderTransformOrigin="0.5,0.5">
+        </Image>
+        
+        <Image Stretch="UniformToFill"  
+               gif:ImageBehavior.AnimatedSource="{Binding Game.Coin4.Sprite}"  
+               Width="{Binding Game.Coin4.Width}" 
+               Canvas.Left="{Binding Game.Coin4.X}" 
+               Canvas.Top="{Binding Game.Coin4.Y}" 
+               RenderTransformOrigin="0.5,0.5">
+        </Image>
+        
+        <Image Stretch="UniformToFill"  
+               gif:ImageBehavior.AnimatedSource="{Binding Game.Coin5.Sprite}"  
+               Width="{Binding Game.Coin5.Width}" 
+               Canvas.Left="{Binding Game.Coin5.X}" 
+               Canvas.Top="{Binding Game.Coin5.Y}" 
+               RenderTransformOrigin="0.5,0.5">
+        </Image>
+        
+        <Image Stretch="UniformToFill"  
+               gif:ImageBehavior.AnimatedSource="{Binding Game.Coin6.Sprite}"  
+               Width="{Binding Game.Coin6.Width}" 
+               Canvas.Left="{Binding Game.Coin6.X}" 
+               Canvas.Top="{Binding Game.Coin6.Y}" 
+               RenderTransformOrigin="0.5,0.5">
+        </Image>
+        
+        <Image Stretch="UniformToFill"  
+               gif:ImageBehavior.AnimatedSource="{Binding Game.Player.Sprite}"  
+               Width="{Binding Game.Player.Width}"
+               Height="{Binding Game.Player.Height}"
+               Canvas.Left="{Binding Game.Player.X}" 
+               Canvas.Top="{Binding Game.Player.Y}" 
+               RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="{Binding Game.Player.Angle}"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>            
+        </Image>
+
+        <Image Stretch="UniformToFill"  
+               gif:ImageBehavior.AnimatedSource="{Binding Game.Enemy1.Sprite}"  
+               Width="{Binding Game.Enemy1.Width}" 
+               Canvas.Left="{Binding Game.Enemy1.X}" 
+               Canvas.Top="{Binding Game.Enemy1.Y}" 
+               RenderTransformOrigin="0.5,0.5">
+        </Image>
+
+        <Image Stretch="UniformToFill"  
+               gif:ImageBehavior.AnimatedSource="{Binding Game.Enemy2.Sprite}"  
+               Width="{Binding Game.Enemy2.Width}" 
+               Canvas.Left="{Binding Game.Enemy2.X}" 
+               Canvas.Top="{Binding Game.Enemy2.Y}" 
+               RenderTransformOrigin="0.5,0.5">
+        </Image>
+
+    </Canvas>
+</Window>
